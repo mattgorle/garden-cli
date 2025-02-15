@@ -978,7 +978,7 @@ class Cli
         &$value,
         string $type,
         string $name = "",
-        OptSchema $def = null
+        ?OptSchema $def = null
     ): bool {
         if ($def !== null && $def->isArray()) {
             $value = (array) $value;
