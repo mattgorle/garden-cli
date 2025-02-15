@@ -320,7 +320,7 @@ class Cli
      *
      * @throws Exception Throws an exception when {@link $exit} is false and the help or errors need to be displayed.
      */
-    public function parse(array $argv = null, bool $exit = true): Args
+    public function parse(?array $argv = null, bool $exit = true): Args
     {
         $formatOutputBak = $this->formatOutput;
         // Only format commands if we are exiting.
